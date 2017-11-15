@@ -1,0 +1,129 @@
+/* FONT IMPORT */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+
+/* HEADER */
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	background-color: black;
+	height: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+div:before, div:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header>div>ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header>div>ul>li {
+	display: inline-block;	
+}
+
+header>div>ul>li>a {
+	line-height: 50px;
+	padding: 0 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header>div>ul>li>a:hover {
+	background-color: rgba(72, 72, 72, 0.9);
+}
+
+header>div>img {
+	padding: 10px 20px;	
+}
+
+/* FIRST SECTION */
+
+.hero {
+	height: 100vh;	
+}
+
+.gallery {
+	width: 100%;
+	height: 300px;
+}
+
+.photo {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.photo:last-of-type {
+	margin-right: 0;	
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;	
+}
+
+.map img {
+	padding: 20px 0;
+	width: 100%;	
+}
+
+footer {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+/* DIFFERENT LOOK FOR DIFFERENT RESOLUTION */
+@media (max-width: 767px) {	
+	header {
+		height: 200px;
+		background-color: red;
+		text-align: center;
+	}
+	
+	header>div>ul>li {
+		display: block;	
+	}
+
+	header>div>ul {
+		float: none;	
+	}
+	
+	.photo {
+	float: none;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	}
+	
+	.gallery {
+		height: 100%;	
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) { 
+ 	header>div>ul {
+	margin-right: 50px;	
+	}
+}
+
+@media (min-width: 1200px) {	
+ 	header>div>ul {
+	margin-right: 50px;	
+	}
+}
